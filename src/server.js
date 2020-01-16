@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const databaseConfig = require('./config/database')
 
 class App {
-  constructor () {
+  constructor() {
     this.express = express()
     this.isDev = process.env.NODE_ENV !== 'production'
 
@@ -12,7 +12,7 @@ class App {
     this.routes()
   }
 
-  database () {
+  database() {
     // conexão usando o mongodbAtlas: mongodb://usuario:senha@localhost:27017/nomedadatabase - a URL de conexão usando o db atlas
     mongoose.connect(databaseConfig.uri, {
       useCreateIndex: true,
@@ -20,11 +20,11 @@ class App {
     })
   }
 
-  middlewares () {
+  middlewares() {
     this.express.use(express.json())
   }
 
-  routes () {
+  routes() {
     this.express.use(require('./routes'))
   }
 }
