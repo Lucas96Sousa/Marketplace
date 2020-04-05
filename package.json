@@ -32,7 +32,7 @@
     "mime": "^1.4.1",
     "mime-db": "^1.38.0",
     "mime-types": "^2.1.22",
-    "mongoose": "^5.5.0",
+    "mongoose": "^5.7.5",
     "mongoose-paginate": "^5.0.3",
     "negotiator": "^0.6.1",
     "nodemailer": "^6.1.0",
